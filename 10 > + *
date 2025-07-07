@@ -1,0 +1,28 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class _11_ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String line = sc.nextLine();
+        String[] parts = line.split(" ");
+
+        if (parts.length > 10) {
+            int sum = 0;
+            for (String part : parts) {
+                sum += Integer.parseInt(part);
+            }
+            System.out.println(sum);
+        } else {
+            int product = 1;
+            for (String part : parts) {
+                product *= Integer.parseInt(part);
+            }
+            System.out.println(product);
+        }
+    }
+}
+
+
