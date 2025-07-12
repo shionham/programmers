@@ -1,0 +1,22 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class __12__ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        String input = sc.nextLine();
+        String[] parts = input.split(" ");
+
+        for (String part : parts) {
+            int num = Integer.parseInt(part);
+
+            if (num % 2 == 0) {
+                System.out.print((num / 2) + " ");
+            } else {
+                System.out.print((num * 2) + " ");
+            }
+        }
+    }
+}
