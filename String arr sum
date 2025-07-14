@@ -1,0 +1,25 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class __13__ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();
+        sc.nextLine();
+        String[] input = sc.nextLine().split(" ");
+        int sum = 0;
+
+        for (String s : input) {
+            int num = Integer.parseInt(s);
+            sum += num;
+
+            if (sum > n) {
+                System.out.println("합이 n보다 큽니다. 현재까지의 합 : " + sum);
+                return;
+            }
+        }
+        System.out.println("합이 n보다 작습니다. 최종 합 : " + sum);
+    }
+}
