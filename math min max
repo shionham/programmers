@@ -1,0 +1,20 @@
+package baekjoon;
+
+import java.util.Scanner;
+
+public class __121__ {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int num1 = sc.nextInt();
+        int num2 = sc.nextInt();
+
+        int start = Math.min(num1, num2);
+        int end = Math.max(num1, num2);
+
+        for (int i = start; i <= end; i++) {
+            System.out.print(i + " ");
+
+        }
+    }
+}
